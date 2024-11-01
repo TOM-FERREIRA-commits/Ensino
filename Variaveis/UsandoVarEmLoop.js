@@ -4,7 +4,7 @@ for(var i = 0; i < 10; i++){
 console.log('i = ',i)
 
 //Usando Var em loop #2
-const funcs = []
+//const funcs = []
 for (var i = 0; i < 10; i++){
     funcs.push(function() {
      console.log(i )   
