@@ -12,4 +12,19 @@ function jurosSimples(capitalI, taxaJ, tempoI){
      }
 }
 
-console.log(jurosSimples(1000, 0.05, 3))
+console.log(jurosSimples(1000, 0.10, 3))
+
+
+function calcJurosCompostos (capitalI, taxaJ, tempoI){
+
+      let montante = capitalI * Math.pow((1 + taxaJ), tempoI)
+      let juros = capitalI + tempoI
+   return {
+      montante : montante,
+      juros : juros
+   }
+}
+
+let resultado = calcJurosCompostos(1000, 0.10, 3);
+console.log("Juros: R$ " + resultado.juros.toFixed(2));   // Exibe o valor dos juros
+console.log("Montante final: R$ " + resultado.montante.toFixed(2));   // Exibe o montante final
