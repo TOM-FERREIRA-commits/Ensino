@@ -20,7 +20,7 @@ console.log(aprovados[8] === undefined)
 //reorganiza Array
 console.log(aprovados)
 aprovados.sort()
-console.log(aprovados)
+console.log(aprovados);
 
 delete aprovados[1]
 console.log(aprovados[1])
